@@ -1,31 +1,140 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-	<title> skeleton </title>
-	
-	<link rel = "stylesheet" href="lucstyle.css">
+    <meta charset="utf-8">
+    <title> skeleton </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="lucstyle.css">
+
 </head>
 
 <body>
-	
-	<table width="100%" border="0" cellpadding="6">
-  <tbody>
-    <tr>
-      <td><img src= "https://format-com-cld-res.cloudinary.com/image/private/s--9SEw08xp--/c_limit,g_center,h_65535,w_960/fl_keep_iptc.progressive,q_95/943459-50382972-imageedit_4_8267624534.gif" style= "width:50%"></td>
-       <td>&nbsp;</td>
-      <td>&nbsp;</td>
-		  <td>&nbsp;</td>
-      <td>&nbsp;</td>
-	<td>cv</td>
-      <td>about</td>
-      <td>multimedia</td>
-      <td>photos</td>
-      <td>videos</td>
-    </tr>
-  </tbody>
-</table>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img
+            src="https://format-com-cld-res.cloudinary.com/image/private/s--9SEw08xp--/c_limit,g_center,h_65535,w_960/fl_keep_iptc.progressive,q_95/943459-50382972-imageedit_4_8267624534.gif"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto nav-fill w-75">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">cv</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">multimeda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">photos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">videos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br/>
+<br/>
+<br/><br/><br/>
 
-	
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img class="img-fluid" src="aboutimages/capb.png" data-target="#aboutImagesCapbPngModal" data-toggle="modal">
+            <br/>
+            <br/>
+            <br/>
+            <img class="img-fluid" src="mmimages/img20190201_12483505.jpg" data-target="#img20190201_12483505Modal" data-toggle="modal">
+
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="img-fluid" src="photoimages/IMG_2802.JPG" alt="Chania" data-target="#IMG_2802Modal" data-toggle="modal">
+            <br/>
+            <br/>
+            <br/>
+            <img class="img-fluid" src="mmimages/ezgif.com-crop.gif" alt="Chania" data-target="#img20190201_12483505Modal" data-toggle="modal">
+            <br/>
+            <br/>
+            <br/>
+            <img class="img-fluid" src="photoimages/IMG_2802.JPG" alt="Chania" data-target="#img20190201_12483505Modal" data-toggle="modal">
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img class="img-fluid" src="mmimages/img20190201_12483505.jpg" alt="Chania" data-target="#img20190201_12483505Modal" data-toggle="modal">
+            <br/>
+            <br/>
+            <br/>
+            <img class="img-fluid" src="aboutimages/capb.png" alt="Chania" data-target="#img20190201_12483505Modal" data-toggle="modal">
+            <br/>
+            <br/>
+            <br/>
+            <img class="img-fluid" src="mmimages/ezgif.com-crop.gif" alt="Chania" data-target="#img20190201_12483505Modal" data-toggle="modal">
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="aboutImagesCapbPngModal" tabindex="-1" role="dialog" aria-labelledby="aboutImagesCapbPngModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body text-center big-image">
+                <img class="img-fluid" src="aboutimages/capb.png">
+            </div>
+            <p class="text-white">This is a caption</p>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="img20190201_12483505Modal" tabindex="-1" role="dialog" aria-labelledby="img20190201_12483505Modal" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body text-center">
+                <img class="img-fluid" src="mmimages/img20190201_12483505.jpg">
+            </div>
+            <p class="text-white">This is a caption</p>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="IMG_2802Modal" tabindex="-1" role="dialog" aria-labelledby="IMG_2802Modal" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body text-center">
+                <img class="img-fluid" src="photoimages/IMG_2802.JPG">
+            </div>
+            <p class="text-white">This is a caption</p>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>
